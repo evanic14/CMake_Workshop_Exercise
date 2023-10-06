@@ -1,0 +1,4 @@
+# ninja log v5
+27	238	7182897512312789	pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	71006e99d7c72929
+241	660	7182897514504700	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	91fe20a7d42c3048
+21	1279	7182932695119764	build.ninja	9700b79c9bc1306b

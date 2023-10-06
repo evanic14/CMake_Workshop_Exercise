@@ -28,20 +28,26 @@ if (PICO_CYW43_SUPPORTED) # set by BOARD=pico-w
         # See the lib/CMakeLists.txt
         # 
         # Tip! Use the Fetchcontent module of CMake
+		add_subdirectory(external_lib)
+		#FetchContent(cmake_workshop_mqtt_lib_w_cmake)
 
         
         # Add main executable, 
         # determine the location of main source file first!
+        #add_executable(CMake_Workshop_Exercise/src/main.cpp)
+        add_executable(MyExecutable ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp)
+        target_link_libraries(MyExecutable PRIVATE ${CMAKE_CURRENT_LIST_DIR}/src)
  
         # enable usb output, disable uart output
         pico_enable_stdio_usb(pico_mqtt_client 1)
         pico_enable_stdio_uart(pico_mqtt_client 0)
 
 		# Add the include directories for main executable!
+        
 
 		# Link the main executable with the rpi_pico_mqtt library
-
-        pico_add_extra_outputs(pico_mqtt_client)
+		
+        pico_add_extra_outputs(MyExecutable)
 
 
     endif ()

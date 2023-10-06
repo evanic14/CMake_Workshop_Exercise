@@ -5,21 +5,21 @@
  * Fill in your group-name here!
  * Everything has to be lower case and fit in 400 characters!
  */
-const char *group_name = "<invalid_group_name>";
+const char *group_name = "<Emiel-Mark-Tim>";
 
 /**
  * Add custom phrase for requesting the price!
  * Can be anything..
  * Leave at default if you're out of creativity ;)
  */
-const char *winning_phrase = "GimmeDaPrice!";
+const char *winning_phrase = "honk!";
 
 
 /**
  * Fill in the Wifi details
  */
-#define WIFI_SSID "<Wifi_SSID>"
-#define WIFI_PASSWORD "<Wifi_password>"
+#define WIFI_SSID "<cmake_demonstration>"
+#define WIFI_PASSWORD "<demopassword!>"
 
 
 /**
